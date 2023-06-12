@@ -1,0 +1,147 @@
+
+#root{
+  background-image: url("../../img/pets.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: 100%;
+ 
+  font-family: 'Chelsea Market', cursive!important;
+}
+
+#root .navbar{
+  margin-bottom: 3rem !important;
+}
+
+#root .navbar .dropdown-menu{
+  margin-bottom: 3rem !important;
+  background-color: #ef476f;
+  border: none;
+  
+}
+
+#root .navbar .dropdown-item{
+  background-color: #ef476f;
+  font-weight: 700;
+  border: 1px dotted #ffc107;
+}
+
+#root .navbar .dropdown-item:hover{
+  background-color: white;
+  font-weight: 700;
+  border: 1px dotted #ef476f;
+}
+
+
+
+#root > .container  >  .custon-container{
+  background-color: #ef476f42;
+  min-height: 85vh;
+  margin-top: 70px;
+  border-radius: 38px;
+  color:#ef476f;
+  border: 3px solid white;
+  background-image: url("../../img/huellas-patron.png");
+}
+
+#root > .container  >  .custon-container:hover{
+  background-color: #ef476f;
+}
+
+
+#root > .container  >  .custon-container > .form-container {
+  background-color: #ffffffde;
+    border-radius: 38px;
+    padding: 44px;
+    margin:20px;
+    border: 3px solid #ef476f;
+    min-height: 85vh;
+}
+
+#root > .container  >  .custon-container > .form-container:hover{
+  border: 3px solid #ffc107;
+}
+
+#root > .container >  .custon-container > .form-container h1{
+  margin-bottom: 20%;
+  text-align: center;
+}
+
+#root > .container >  .custon-container > .form-container label{
+    font-size: 20px!important;
+}
+
+#root > .container >  .custon-container > .form-container .form-control:focus{
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.2rem #ffc1074f;
+}
+
+#root > .container >  .custon-container > .form-container .form-control:hover{
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.2rem #ffc1074f;
+}
+
+
+#root .custom-rose{
+  background-color: #EF476F;
+  color: white;
+
+}
+
+#root .custom-rose  a{
+  color: white !important;
+}
+
+#root .custom-rose a:hover{
+  color: #ffc107 !important
+}
+
+#root{
+  font-family: 'Stylish', sans-serif;
+}
+
+#root .index-option {
+  text-align: center;
+
+}
+
+#root .index-option-img{
+
+  border-radius: 50%;
+  border: 3px solid #ffc107;
+  width: 50%;
+  min-height: 150px;
+  background-color: #EF476F;
+  float:none;margin:auto;
+}
+
+#root .index-option-img:hover{
+  background-image: url("https://dl3.glitter-graphics.net/pub/3200/3200833q843ro9i6h.gif");
+  background-color: #ffc107;
+  border: 3px dotted #EF476F;
+}
+
+#root .index-option-img > img{
+  margin: auto;
+  width: 50%;
+}
+
+
+.fa-1x {
+  font-size: 1.5rem;
+  }
+  .navbar-toggler.toggler-example {
+  cursor: pointer;
+  }
+  .dark-blue-text {
+  color: #0A38F5;
+  }
+  .dark-pink-text {
+  color: #AC003A;
+  }
+  .dark-amber-text {
+  color: #ff6f00;
+  }
+  .dark-teal-text {
+  color: #004d40;
+  }

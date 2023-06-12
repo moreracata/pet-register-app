@@ -1,0 +1,79 @@
+
+ .custom-carousel-options{    
+  display:         flex;
+  flex-wrap:       wrap;
+  justify-content: center;
+}
+
+.custom-carousel-options .carousel-option{
+  margin: -20px!Important;
+  border-radius: 50%;
+  border: 3px solid #ffc107;
+  width: 50%;
+  min-height: 80px;
+  background-color: #EF476F;
+  margin:auto;
+}
+
+.custom-carousel-options .carousel-option img{
+  position: relative;
+    width: 58%;
+    margin: 13% 20%;
+
+  }
+
+.custom-carousel-options .carousel-option:hover{
+  background-image: url("https://dl3.glitter-graphics.net/pub/3200/3200833q843ro9i6h.gif");
+  background-color: #ffc107;
+  border: 3px dotted #EF476F;
+}
+ 
+.custom-carousel-options .carousel-option.center {
+  width: 50% !important; 
+  z-index: 2;
+  background-image: url("https://dl3.glitter-graphics.net/pub/3200/3200833q843ro9i6h.gif");
+}
+
+.custom-carousel .carousel-option.left, .custom-carousel .carousel-option.right {
+  width: 25% !important; 
+  height: 35%;
+  opacity: 0.6;
+}
+
+.custom-carousel .carousel-option.left:hover, .custom-carousel .carousel-option.right:hover {
+  background-image: none!important;
+  opacity: 1;
+}
+
+.custom-carousel .carousel-option.left > img:hover, .custom-carousel .carousel-option.right > img:hover {
+  background-image: none!important;
+  opacity: 1;
+}
+
+.custom-carousel .prev, .custom-carousel .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -67px;
+  padding: 16px;
+  color: #ef476f;
+  font-weight: bolder;
+  font-size: 27px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+.custom-carousel .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.custom-carousel .prev:hover, .custom-carousel .next:hover {
+  text-decoration: none;
+    color: #ffc107;
+    font-size: 35px;
+}
