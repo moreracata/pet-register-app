@@ -23,15 +23,9 @@ export default function ListOptionData(props: ListOptionDataProps){
                     <td>
                     <span className="label label-default">Cata</span>
                     </td>
-                    <td>
-                        
-                            <DeleteBtn />
-                        
-                      
-                        
-                            <EditBtn />
-                        
-                        
+                    <td>                      
+                        <DeleteBtn />                                  
+                        <EditBtn />
                     </td>
 				</tr>
                    

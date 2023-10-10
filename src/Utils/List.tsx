@@ -1,5 +1,6 @@
 import ListOptionData  from "./ListOptionData";
-import './css/List.css';
+import './css/list.css';
+import Paginator  from './Paginator';
 
 export default function List(props: ListProps){
    
@@ -26,15 +27,7 @@ export default function List(props: ListProps){
                                 </tbody>
                                 </table>
                             </div>
-                            <ul className="pagination pull-right">
-                            <li><a href="#"><i className="fa fa-chevron-left"></i></a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#"><i className="fa fa-chevron-right"></i></a></li>
-                            </ul>
+                            <Paginator numberOfPages={5} currentPage={3} />
                         </div>
                     </div>
                 </div>  
@@ -43,7 +36,7 @@ export default function List(props: ListProps){
 
 }
 
-interface  ListProps {
+interface ListProps {
     headerOption: string[];
     options: any[]
  
