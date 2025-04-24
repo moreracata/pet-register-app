@@ -1,8 +1,23 @@
 import ListOptionData from "./ListOptionData";
 import './css/List.css';
 import Paginator from './Paginator';
+import { useEffect, useState } from 'react';
+
+
+interface ListProps {
+    headerOption: string[];
+    options: any[]
+}
+
 
 export default function List(props: ListProps) {
+
+    const [options, setOptions] = useState(props.options)
+
+    function deleteRegister(id: number) {
+        let newOptions = options.filter(option => option.id != id)
+        setOptions(newOptions)
+    }
 
     return (
         <>
@@ -22,8 +37,10 @@ export default function List(props: ListProps) {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {props.options.map(option =>
-                                        <ListOptionData listObject={option} key={option.id} />)}
+                                    {options.map(option =>
+                                        <ListOptionData
+                                            deleteRegister={deleteRegister}
+                                            listObject={option} key={option.id} />)}
                                 </tbody>
                             </table>
                         </div>
@@ -33,11 +50,5 @@ export default function List(props: ListProps) {
             </div>
         </>
     )
-
-}
-
-interface ListProps {
-    headerOption: string[];
-    options: any[]
 
 }
